@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Fu6966BkWGha3hztVfk2XuLTTezOHi99Zxl/wn9xXFxI7Kf/bOjoy4gNtCBQRJY+IH1hnOmAVwAsQUbLrq9tg==",
+  "dgSpecHash": "p+wf2afv7/FLB8SFX41EJEbbji9yck2/L/i2G2PH3xd9U2xQISB8FHGyjGhSaK1AUJyvp5i9s8bamFWSdvAZUQ==",
   "success": true,
-  "projectFilePath": "/Users/dmitrodudcenko/Downloads/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
+  "projectFilePath": "/Users/dmitrodudcenko/Documents/Programing/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
   "expectedPackageFiles": [
     "/Users/dmitrodudcenko/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/dmitrodudcenko/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

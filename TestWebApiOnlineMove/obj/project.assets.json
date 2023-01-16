@@ -11015,11 +11015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dmitrodudcenko/Downloads/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
+      "projectUniqueName": "/Users/dmitrodudcenko/Documents/Programing/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
       "projectName": "TestWebApiOnlineMove",
-      "projectPath": "/Users/dmitrodudcenko/Downloads/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
+      "projectPath": "/Users/dmitrodudcenko/Documents/Programing/TestWebApiOnlineMove/TestWebApiOnlineMove/TestWebApiOnlineMove.csproj",
       "packagesPath": "/Users/dmitrodudcenko/.nuget/packages/",
-      "outputPath": "/Users/dmitrodudcenko/Downloads/TestWebApiOnlineMove/TestWebApiOnlineMove/obj/",
+      "outputPath": "/Users/dmitrodudcenko/Documents/Programing/TestWebApiOnlineMove/TestWebApiOnlineMove/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dmitrodudcenko/.nuget/NuGet/NuGet.Config"
