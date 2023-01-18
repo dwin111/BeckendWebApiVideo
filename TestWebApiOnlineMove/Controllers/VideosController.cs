@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using TestWebApiOnlineMove.Context;
 using TestWebApiOnlineMove.Models;
 
@@ -10,6 +12,8 @@ namespace TestWebApiOnlineMove.Controllers
     public class VideosController : Controller
     {
         private readonly AppDbContext _context;
+
+        private int UserId => int.Parse(User.Claims.Single(c => c.Type == ClaimTypes.NameIdentifier).Value);
 
         public VideosController(AppDbContext context)
         {
@@ -23,6 +27,40 @@ namespace TestWebApiOnlineMove.Controllers
 
             return list;
         }
+        [Authorize(Roles = "User")]
+        [HttpGet("getAllGenre")]
+        public async Task<List<Genres>> GetGenres()
+        {
+            var list = await _context.Genres.ToListAsync();
+
+            return list;
+        }
+
+
+        [HttpPost("addGenre")]
+        public async Task<bool> CreateVideo(Genres model)
+        {
+            try
+            {
+                var saveModel = new Genres()
+                {
+                    Id = model.Id,
+                    Genre = model.Genre,
+                };
+                if (!await _context.Genres.AnyAsync(x => x.Id == model.Id))
+                {
+                    await _context.Genres.AddAsync(saveModel);
+                    await _context.SaveChangesAsync();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         [HttpGet("{id}")]
         public async Task<Video> GetByIdVideo(int id)
         {
